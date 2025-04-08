@@ -1,35 +1,11 @@
-sport_id_mapping <- c(
-  soccer = 1,
-  basketball = 18,
-  tennis = 13,
-  volleyball = 91,
-  handball = 78,
-  baseball = 16,
-  horse_racing = 2,
-  greyhounds = 4,
-  ice_hockey = 17,
-  snooker = 14,
-  american_football = 12,
-  cricket = 3,
-  futsal = 83,
-  darts = 15,
-  table_tennis = 92,
-  badminton = 94,
-  rugby_union = 8,
-  rugby_league = 19,
-  australian_rules = 36,
-  bowls = 66,
-  boxing = 9,
-  gaelic_sports = 75,
-  floorball = 90,
-  beach_volleyball = 95,
-  water_polo = 110,
-  squash = 107,
-  e_sports = 151,
-  mma = 162,
-  surfing = 148
-)
-
+#' Country Code Mappings for BetsAPI
+#'
+#' A named vector mapping country names to their corresponding ISO two-letter country codes
+#' used by the BetsAPI system. Used for converting human-readable country names to the 
+#' API's country code parameters.
+#'
+#' @format A named vector where names are country names and values are two-letter ISO country codes
+#' @keywords internal
 country_code_mapping <- c(
   "andorra" = "ad",
   "united arab emirates" = "ae",
@@ -74,7 +50,7 @@ country_code_mapping <- c(
   "central african republic" = "cf",
   "congo - brazzaville" = "cg",
   "switzerland" = "ch",
-  "côte d’ivoire" = "ci",
+  "côte d'ivoire" = "ci",
   "cook islands" = "ck",
   "chile" = "cl",
   "cameroon" = "cm",
@@ -264,10 +240,11 @@ country_code_mapping <- c(
   "uganda" = "ug",
   "u.s. outlying islands" = "um",
   "usa" = "us",
+  "united states" = "us",
   "uruguay" = "uy",
   "uzbekistan" = "uz",
   "vatican city" = "va",
-  "st. vincent & grenadines" = "vc",
+  "saint vincent and the grenadines" = "vc",
   "venezuela" = "ve",
   "british virgin islands" = "vg",
   "u.s. virgin islands" = "vi",
@@ -280,29 +257,8 @@ country_code_mapping <- c(
   "mayotte" = "yt",
   "south africa" = "za",
   "zambia" = "zm",
-  "zimbabwe" = "zw"
-)
-
-odds_type_to_market_key <- c(
-  "1X2" = "1_1",
-  "asian handicap" = "1_2",
-  "over/under" = "1_3",
-  "asian corners" = "1_4",
-  "1st half asian handicap" = "1_5",
-  "1st half goal line" = "1_6",
-  "1st half asian corners" = "1_7",
-  "half time result" = "1_8",
-  "money line" = "18_1",
-  "spread" = "18_2",
-  "total points" = "18_3",
-  "money line (half)" = "18_4",
-  "spread (half)" = "18_5",
-  "total points (half)" = "18_6",
-  "quarter - winner (2-way)" = "18_7",
-  "quarter - handicap" = "18_8",
-  "quarter - total (2-way)" = "18_9",
-  "match winner 2-way" = "*_1",
-  "asian handicap" = "*_2",
-  "over/under" = "*_3",
-  "draw no bet" = "3_4"
-)
+  "zimbabwe" = "zw",
+  "england" = "gb",
+  "uk" = "gb",
+  "britain" = "gb"
+) 
